@@ -10,9 +10,9 @@ export default function EducationSection() {
 
   return (
     <div>
-      <SectionHeading 
-        overline="Academic Background" 
-        title="Education" 
+      <SectionHeading
+        overline="Academic Background"
+        title="Education"
         description="My academic journey from undergraduate to graduate studies, building a strong foundation in computer science."
       />
 
@@ -31,9 +31,8 @@ export default function EducationSection() {
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-xl font-bold">{edu.degree}</h3>
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                    edu.status === 'Current' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
-                  }`}>
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${edu.status === 'Current' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'
+                    }`}>
                     {edu.status}
                   </span>
                 </div>

@@ -11,7 +11,7 @@ export function PersonJsonLd() {
     alternateName: "V.V.S. Krishna Aditya",
     url: "https://example.com",
     jobTitle: "Backend Engineer",
-    description: "Backend Engineer with 3 years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI",
+    description: "Backend Engineer with 2+ years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI",
     knowsAbout: [
       "Java",
       "Spring Boot",

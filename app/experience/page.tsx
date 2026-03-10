@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
+import { EXPERIENCE } from "@/content/home"
 
 export const metadata: Metadata = {
   title: "Experience — V.V.S. Krishna Aditya",
-  description: "3 years of professional experience in backend development, API design, and AI system integration.",
+  description: "2+ years of professional experience in backend development, API design, and AI system integration.",
 }
 
 /**
@@ -17,43 +18,42 @@ export default function ExperiencePage() {
           Professional Experience
         </h1>
         <p className="text-lg text-fg/80 max-w-2xl leading-relaxed">
-          3 years of experience building scalable backend systems, optimizing REST APIs, and
+          2+ years of experience building scalable backend systems, optimizing REST APIs, and
           integrating AI/ML capabilities with production-grade reliability.
         </p>
       </div>
 
       {/* Experience Timeline */}
       <div className="space-y-8">
-        <section aria-labelledby="current-role">
-          <h2 id="current-role" className="text-2xl font-semibold mb-6">
-            Current Role
+        <section aria-labelledby="work-history">
+          <h2 id="work-history" className="text-2xl font-semibold mb-6">
+            Work History
           </h2>
-          <div className="bg-muted/30 border border-border rounded-xl p-6 space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <h3 className="text-xl font-semibold">Graduate Research Assistant</h3>
-              <span className="text-sm text-fg/60 font-medium">Oct 2025 - Present</span>
-            </div>
-            <p className="text-base text-fg/70 font-medium">California State University, East Bay</p>
-            <p className="text-fg/80 leading-relaxed">
-              Designing and implementing reproducible ML lifecycles, deploying models as production-ready
-              FastAPI services. Building LLM evaluation frameworks to benchmark prompt strategies and
-              retrieval accuracy. Enhancing system observability through structured logging and validation
-              frameworks, reducing debugging time for research APIs.
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 bg-accent/10 text-accent rounded text-sm font-medium">
-                FastAPI
-              </span>
-              <span className="px-3 py-1 bg-accent/10 text-accent rounded text-sm font-medium">
-                ML Lifecycle
-              </span>
-              <span className="px-3 py-1 bg-accent/10 text-accent rounded text-sm font-medium">
-                LLM Evaluation
-              </span>
-              <span className="px-3 py-1 bg-accent/10 text-accent rounded text-sm font-medium">
-                Python
-              </span>
-            </div>
+          <div className="space-y-6">
+            {EXPERIENCE.map((exp, index) => (
+              <div key={index} className="bg-muted/30 border border-border rounded-xl p-6 space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                  <div>
+                    <h3 className="text-xl font-semibold">{exp.role}</h3>
+                    <p className="text-base text-accent font-medium">{exp.company}</p>
+                    {exp.location && (
+                      <p className="text-sm text-fg/60">{exp.location}</p>
+                    )}
+                  </div>
+                  <span className="text-sm text-fg/60 font-medium whitespace-nowrap">{exp.period}</span>
+                </div>
+                <p className="text-fg/80 leading-relaxed">
+                  {exp.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {exp.skills.map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-accent/10 text-accent rounded text-sm font-medium">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 

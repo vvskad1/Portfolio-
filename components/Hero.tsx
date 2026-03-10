@@ -22,7 +22,7 @@ export default function Hero() {
             Backend Engineer
           </h1>
           <p className="text-lg text-fg/80">
-            Designing and optimizing REST APIs with 3 years of experience in Java, Spring Boot, and FastAPI. Specializing in LLM integration, RAG systems, and production-grade performance optimization.
+            Designing and optimizing REST APIs with 2+ years of experience in Java, Spring Boot, and FastAPI. Specializing in LLM integration, RAG systems, and production-grade performance optimization.
           </p>
 
           <div className="flex flex-wrap gap-4">

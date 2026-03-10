@@ -10,7 +10,7 @@ export default function AboutTeaser() {
       <div className="lg:col-span-2">
         <SectionHeading overline="About" title="Short Bio" description={undefined} />
         <p className="text-fg/80 leading-relaxed">
-          Backend Engineer with 3 years of experience designing and optimizing REST APIs using Java
+          Backend Engineer with 2+ years of experience designing and optimizing REST APIs using Java
           (Spring Boot) and FastAPI. Specializing in building high-performance backend systems that
           integrate LLM-based capabilities, RAG systems, and vector search while maintaining
           production-grade reliability and security.

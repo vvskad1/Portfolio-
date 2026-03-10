@@ -73,22 +73,33 @@ export const EXPERIENCE = [
     company: "California State University, East Bay",
     role: "Graduate Research Assistant",
     period: "Oct 2025 - Present",
-    description: "Designed and implemented reproducible ML lifecycles (data prep to evaluation), deploying models as production-ready FastAPI services for departmental research applications. Built a comprehensive LLM evaluation harness to benchmark prompt strategies and retrieval accuracy. Enhanced system observability by implementing structured logging and validation frameworks, reducing failure debugging time for research APIs.",
-    skills: ["FastAPI", "ML Lifecycle", "LLM Evaluation", "System Observability"]
+    location: "Hayward, CA",
+    description: "Architected and maintained FastAPI backend services supporting 8+ concurrent research projects, processing 50K+ inference requests per month across training and evaluation workflows. Designed an internal LLM evaluation framework integrating retrieval pipelines, structured benchmarking, and centralized logging, reducing experiment comparison time by 40%. Improved API reliability from 95% to 99.3% success rate by implementing request validation layers, structured exception handling, and distributed request tracing. Optimized PostgreSQL queries and indexing strategies for datasets exceeding 10GB+, reducing average response time from 420ms to 270ms.",
+    skills: ["FastAPI", "PostgreSQL", "LLM Evaluation", "Distributed Tracing"]
   },
   {
     company: "Scholarship Auditions (Accoladi)",
     role: "AI Engineering Intern",
-    period: "June 2025 - Aug 2025",
-    description: "Engineered and deployed a production-ready RAG chatbot utilizing Gemma-7B via Groq API, automating FAQ resolution and significantly reducing manual support load. Reduced average query latency by 30% by designing and implementing a vector-based semantic search layer and intelligent caching strategy. Developed automated data ingestion pipelines to ensure real-time synchronization between structured retrieval sources and LLM context windows.",
-    skills: ["RAG", "Groq API", "Vector Search", "Semantic Caching"]
+    period: "June 2025 - August 2025",
+    location: "California, USA",
+    description: "Designed and deployed a production RAG-based backend system serving 3K+ monthly active users with semantic retrieval over 100K+ structured records. Reduced P95 API latency by 30% (650ms → 450ms) through query plan optimization, composite indexing, and Redis caching under peak loads of 40+ concurrent requests. Built asynchronous ingestion pipelines to continuously synchronize structured data sources with vector indexes, reducing data staleness from hours to under 5 minutes. Conducted load testing and profiling to identify memory bottlenecks, improving throughput by 22% without additional infrastructure cost.",
+    skills: ["RAG", "Vector Search", "Redis", "Load Testing", "Performance Optimization"]
   },
   {
-    company: "Virtusa & YahvaAI",
+    company: "YahvaAI",
     role: "Software Developer",
-    period: "June 2022 - Dec 2024",
-    description: "Optimized backend SQL queries and integrated Redis caching, resulting in a 25% improvement in API response times for enterprise-scale Java applications. Designed and maintained secure REST APIs using Spring Boot, implementing JWT-based authentication and fine-grained Role-Based Access Control (RBAC). Spearheaded the refactoring of legacy modules and increased test coverage through unit/integration testing, significantly reducing technical debt and improving maintainability.",
-    skills: ["Spring Boot", "Redis", "JWT", "RBAC", "SQL Optimization"]
+    period: "June 2023 - June 2024",
+    location: "Hyderabad, India",
+    description: "Owned backend architecture and performance optimization for enterprise Java APIs handling 200K+ daily requests across internal business platforms. Improved average response time by 25% (480ms → 360ms) through SQL tuning, cache-layer redesign, and elimination of N+1 query patterns. Implemented JWT-based authentication and RBAC authorization supporting 5+ user roles and secure multi-tenant access control. Increased unit and integration test coverage from 55% to 80%, reducing post-release defects by 30% across quarterly release cycles.",
+    skills: ["Java", "Spring Boot", "SQL Optimization", "JWT", "RBAC"]
+  },
+  {
+    company: "Virtusa",
+    role: "Software Developer",
+    period: "June 2022 - May 2023",
+    location: "Hyderabad, India",
+    description: "Developed and maintained RESTful services supporting enterprise workflows used by 10+ business teams. Resolved 50+ production issues and performance bottlenecks, reducing recurring incident rates by 18%. Strengthened CI/CD reliability by expanding automated test suites and deployment validations, reducing rollback frequency by 25%.",
+    skills: ["Java", "REST APIs", "CI/CD", "Production Support", "Agile"]
   }
 ]
 
@@ -141,11 +152,11 @@ export const SOCIAL_LINKS = {
   email: "vvatturi@horizon.csueastbay.edu"
 }
 
-export const BIO_SHORT = "Backend Engineer with 3 years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI. Specializing in LLM integration, RAG systems, and production-grade API performance optimization."
+export const BIO_SHORT = "Backend Engineer with 2+ years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI. Specializing in LLM integration, RAG systems, and production-grade API performance optimization with measurable results."
 
-export const BIO_LONG = `I'm a Backend Engineer with 3 years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI. Currently pursuing my Master's in Computer Science at California State University - East Bay, where I work as a Graduate Research Assistant deploying production-ready ML systems and LLM evaluation frameworks.
+export const BIO_LONG = `I'm a Backend Engineer with 2+ years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI. Currently pursuing my Master's in Computer Science at California State University - East Bay, where I work as a Graduate Research Assistant architecting FastAPI services for 8+ research projects, processing 50K+ monthly inference requests.
 
-My professional journey spans from enterprise software development at Virtusa & YahvaAI, where I optimized backend SQL queries and implemented secure REST APIs with JWT authentication, to AI engineering at Scholarship Auditions, where I reduced query latency by 30% through vector-based semantic search and intelligent caching strategies.
+My professional journey began with enterprise software development at Virtusa, building RESTful backend services for 10+ business teams, followed by YahvaAI where I owned backend architecture for APIs handling 200K+ daily requests, improving response times by 25%. Most recently, as an AI Engineering Intern at Scholarship Auditions, I deployed production RAG systems serving 3K+ users with 100K+ records, reducing P95 latency by 30% through optimization and intelligent caching.
 
 I specialize in building high-performance backend systems that integrate cutting-edge AI capabilities, including RAG (Retrieval-Augmented Generation), vector search, and LLM APIs, while maintaining production-grade reliability and security. My focus is on creating scalable, maintainable architectures that deliver measurable performance improvements and business value.
 

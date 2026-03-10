@@ -9,7 +9,7 @@ import RouteProgress from "@/components/site/route-progress"
 
 export const metadata: Metadata = {
   title: "V.V.S. Krishna Aditya — Portfolio",
-  description: "Backend Engineer — designing and optimizing REST APIs with 3 years of experience in Java, Spring Boot, and FastAPI.",
+  description: "Backend Engineer — designing and optimizing REST APIs with 2+ years of experience in Java, Spring Boot, and FastAPI.",
   metadataBase: new URL("https://example.com"),
   openGraph: {
     type: "website",

@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "About — V.V.S. Krishna Aditya",
-  description: "Backend Engineer with 3 years of experience designing high-performance REST APIs and integrating AI systems.",
+  description: "Backend Engineer with 2+ years of experience designing high-performance REST APIs and integrating AI systems.",
 }
 
 /**
@@ -29,7 +29,7 @@ export default function AboutPage() {
           </h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-fg/80 leading-relaxed">
-              As a Backend Engineer with 3 years of experience, I specialize in designing and optimizing
+              As a Backend Engineer with 2+ years of experience, I specialize in designing and optimizing
               REST APIs using Java (Spring Boot) and FastAPI. My expertise lies in improving API performance
               through intelligent caching strategies, query optimization, and integrating LLM-based systems
               using RAG and vector search technologies.
