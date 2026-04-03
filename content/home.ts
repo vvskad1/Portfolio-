@@ -173,14 +173,6 @@ export const EXPERIENCE = [
     location: "Hyderabad, India",
     description: "Developed scalable ML solutions using Python, PyTorch, and Scikit-learn for customer segmentation, churn prediction, and real-time fraud detection, resulting in a 41% increase in digital sales and significant fraud reduction. Built production-ready ML pipelines with Apache Spark, PySpark, Airflow, and MLflow, enabling automated retraining and deployment of 25+ models on AWS SageMaker using CI/CD and canary deployments. Leveraged Hugging Face Transformers and LLM fine-tuning (Transformer-XL) for customer service automation and NLP-based chat workflows. Designed explainable AI systems using SHAP, LIME, and Fairlearn, ensuring Responsible AI and GDPR compliance. Architected modular ML microservices using FastAPI and Flask, and engineered real-time inference systems with AWS Lambda, TorchServe, and Triton Inference Server.",
     skills: ["Python", "PyTorch", "Apache Spark", "MLflow", "AWS SageMaker", "FastAPI", "LLM Fine-tuning", "SHAP", "Docker", "Kubernetes"]
-  },
-  {
-    company: "Virtusa",
-    role: "Software Developer",
-    period: "June 2022 - May 2023",
-    location: "Hyderabad, India",
-    description: "Developed and maintained RESTful services supporting enterprise workflows used by 10+ business teams. Resolved 50+ production issues and performance bottlenecks, reducing recurring incident rates by 18%. Strengthened CI/CD reliability by expanding automated test suites and deployment validations, reducing rollback frequency by 25%.",
-    skills: ["Java", "REST APIs", "CI/CD", "Production Support", "Agile"]
   }
 ]
 
