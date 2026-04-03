@@ -8,9 +8,9 @@ export const PROJECTS = [
   },
   {
     slug: "vitaledger",
-    title: "VitaLedger Health Platform",
-    summary: "AI-driven wellness platform with adaptive plans and privacy-first design for personalized health management.",
-    tags: ["React", "FastAPI", "Groq", "SQLite", "Healthcare"],
+    title: "Vite-Ledger",
+    summary: "AI-driven wellness platform with modular FastAPI microservices and LLM-powered recommendations, delivering sub-400ms response times.",
+    tags: ["FastAPI", "React", "PostgreSQL", "LLM", "Redis"],
     category: "AI/Health"
   },
   {
@@ -22,49 +22,130 @@ export const PROJECTS = [
   }
 ]
 
-export const LOGOS = ["csueb", "scholarship-auditions", "yahvaai", "virtusa"] as const
+export const LOGOS = ["csueb", "scholarship-auditions", "accenture"] as const
 
 export const SKILLS = {
   "Languages": [
-    "Java",
     "Python",
+    "Java",
     "SQL",
+    "C++",
+    "MATLAB",
     "JavaScript",
-    "TypeScript"
+    "HTML5",
+    "CSS3",
+    "Spring",
+    "Spring Boot"
+  ],
+  "Machine Learning": [
+    "Supervised & Unsupervised Learning",
+    "Reinforcement Learning (RL/RLHF)",
+    "Transformers",
+    "CNN",
+    "LSTM",
+    "GANs",
+    "Gradient Boosting (XGBoost, LightGBM)",
+    "TensorFlow",
+    "PyTorch",
+    "Scikit-learn",
+    "DeepSpeed",
+    "Hugging Face Accelerate"
+  ],
+  "Large Language Models": [
+    "LLaMA 3 / LLaMA 4",
+    "GPT-3 / GPT-4",
+    "BERT",
+    "Mixture of Experts (MoE)",
+    "Transformer-XL",
+    "LoRA",
+    "ONNX Runtime",
+    "Quantization-Aware Training"
+  ],
+  "NLP & AI": [
+    "Hugging Face Transformers",
+    "spaCy",
+    "NLTK",
+    "OpenAI API",
+    "RAG (Retrieval-Augmented Generation)",
+    "Sentiment Analysis",
+    "Multilingual NLP",
+    "Red-Teaming"
+  ],
+  "Data Engineering": [
+    "Apache Spark",
+    "PySpark",
+    "Spark SQL",
+    "Airflow",
+    "DVC",
+    "Presto",
+    "Hive",
+    "AWS Glue",
+    "ETL Pipelines",
+    "Large-scale Token Filtering"
+  ],
+  "Model Deployment & MLOps": [
+    "MLflow",
+    "TorchServe",
+    "Triton Inference Server",
+    "Docker",
+    "Kubernetes",
+    "FastAPI",
+    "Flask",
+    "REST APIs",
+    "CI/CD Automation",
+    "Canary Deployments",
+    "Shadow Deployments",
+    "Model Quantization"
+  ],
+  "Cloud Platforms": [
+    "AWS (EC2, EKS, S3, Lambda, Redshift, SageMaker)",
+    "Azure (Azure ML, Data Lake)",
+    "GCP (Vertex AI, BigQuery)"
+  ],
+  "Responsible AI": [
+    "SHAP",
+    "LIME",
+    "Fairlearn",
+    "Bias Detection",
+    "AI Governance",
+    "GDPR Compliance",
+    "Safety Alignment"
+  ],
+  "Data Visualization": [
+    "Power BI",
+    "Tableau",
+    "Matplotlib",
+    "Seaborn"
   ],
   "Backend & APIs": [
-    "Spring Boot",
-    "FastAPI",
-    "RESTful Microservices",
-    "MVC Architecture",
+    "Microservices Architecture",
+    "Scalable REST APIs",
     "WebSockets",
-    "Rate Limiting",
     "JWT Authentication",
-    "RBAC"
-  ],
-  "AI & Data": [
-    "RAG (Retrieval-Augmented Generation)",
-    "LLM APIs (OpenAI/Groq)",
-    "Vector Search",
-    "Semantic Caching",
-    "ML Lifecycle Management",
-    "Prompt Engineering"
-  ],
-  "Databases": [
-    "PostgreSQL",
-    "MongoDB",
-    "Redis",
-    "SQLite",
+    "RBAC",
     "Query Optimization",
-    "Indexing Strategies"
+    "Redis Caching",
+    "PostgreSQL",
+    "MongoDB"
   ],
-  "Cloud & DevOps": [
-    "Docker",
-    "CI/CD Pipelines",
-    "Git & Version Control",
+  "DevOps & Collaboration": [
+    "Git",
+    "GitHub",
+    "GitLab",
+    "Bitbucket",
+    "Jenkins",
+    "GitHub Actions",
+    "Jira",
+    "Confluence",
+    "Agile / Scrum",
+    "A/B Testing"
+  ],
+  "Development Tools": [
+    "Jupyter Notebook",
+    "VS Code",
+    "Streamlit",
     "Linux",
-    "Postman",
-    "Unit/Integration Testing"
+    "Shell Scripting"
   ]
 }
 
@@ -72,7 +153,7 @@ export const EXPERIENCE = [
   {
     company: "California State University, East Bay",
     role: "Graduate Research Assistant",
-    period: "Oct 2025 - Present",
+    period: "Aug 2025 - Present",
     location: "Hayward, CA",
     description: "Architected and maintained FastAPI backend services supporting 8+ concurrent research projects, processing 50K+ inference requests per month across training and evaluation workflows. Designed an internal LLM evaluation framework integrating retrieval pipelines, structured benchmarking, and centralized logging, reducing experiment comparison time by 40%. Improved API reliability from 95% to 99.3% success rate by implementing request validation layers, structured exception handling, and distributed request tracing. Optimized PostgreSQL queries and indexing strategies for datasets exceeding 10GB+, reducing average response time from 420ms to 270ms.",
     skills: ["FastAPI", "PostgreSQL", "LLM Evaluation", "Distributed Tracing"]
@@ -86,12 +167,12 @@ export const EXPERIENCE = [
     skills: ["RAG", "Vector Search", "Redis", "Load Testing", "Performance Optimization"]
   },
   {
-    company: "YahvaAI",
-    role: "Software Developer",
-    period: "June 2023 - June 2024",
+    company: "Accenture",
+    role: "AI/ML Engineer",
+    period: "June 2021 - July 2024",
     location: "Hyderabad, India",
-    description: "Owned backend architecture and performance optimization for enterprise Java APIs handling 200K+ daily requests across internal business platforms. Improved average response time by 25% (480ms → 360ms) through SQL tuning, cache-layer redesign, and elimination of N+1 query patterns. Implemented JWT-based authentication and RBAC authorization supporting 5+ user roles and secure multi-tenant access control. Increased unit and integration test coverage from 55% to 80%, reducing post-release defects by 30% across quarterly release cycles.",
-    skills: ["Java", "Spring Boot", "SQL Optimization", "JWT", "RBAC"]
+    description: "Developed scalable ML solutions using Python, PyTorch, and Scikit-learn for customer segmentation, churn prediction, and real-time fraud detection, resulting in a 41% increase in digital sales and significant fraud reduction. Built production-ready ML pipelines with Apache Spark, PySpark, Airflow, and MLflow, enabling automated retraining and deployment of 25+ models on AWS SageMaker using CI/CD and canary deployments. Leveraged Hugging Face Transformers and LLM fine-tuning (Transformer-XL) for customer service automation and NLP-based chat workflows. Designed explainable AI systems using SHAP, LIME, and Fairlearn, ensuring Responsible AI and GDPR compliance. Architected modular ML microservices using FastAPI and Flask, and engineered real-time inference systems with AWS Lambda, TorchServe, and Triton Inference Server.",
+    skills: ["Python", "PyTorch", "Apache Spark", "MLflow", "AWS SageMaker", "FastAPI", "LLM Fine-tuning", "SHAP", "Docker", "Kubernetes"]
   },
   {
     company: "Virtusa",
@@ -152,12 +233,14 @@ export const SOCIAL_LINKS = {
   email: "vvatturi@horizon.csueastbay.edu"
 }
 
-export const BIO_SHORT = "Backend Engineer with 2+ years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI. Specializing in LLM integration, RAG systems, and production-grade API performance optimization with measurable results."
+export const BIO_SHORT = "Backend Engineer & AI/ML Engineer with 3+ years of experience designing and optimizing scalable REST APIs using Java (Spring Boot) and FastAPI. Proven track record of improving system performance by up to 30% through query optimization, caching strategies, and indexing. Experienced in building production-grade backend systems integrating LLM-based pipelines (RAG, vector search) and deploying reliable, high-throughput services under concurrent workloads."
 
-export const BIO_LONG = `I'm a Backend Engineer with 2+ years of experience designing and optimizing REST APIs using Java (Spring Boot) and FastAPI. Currently pursuing my Master's in Computer Science at California State University - East Bay, where I work as a Graduate Research Assistant architecting FastAPI services for 8+ research projects, processing 50K+ monthly inference requests.
+export const BIO_LONG = `I'm a Backend Engineer and AI/ML Engineer with 3+ years of experience designing and optimizing scalable REST APIs using Java (Spring Boot) and FastAPI. Currently pursuing my Master's in Computer Science at California State University - East Bay, where I work as a Graduate Research Assistant architecting FastAPI services for 8+ research projects, processing 50K+ monthly inference requests.
 
-My professional journey began with enterprise software development at Virtusa, building RESTful backend services for 10+ business teams, followed by YahvaAI where I owned backend architecture for APIs handling 200K+ daily requests, improving response times by 25%. Most recently, as an AI Engineering Intern at Scholarship Auditions, I deployed production RAG systems serving 3K+ users with 100K+ records, reducing P95 latency by 30% through optimization and intelligent caching.
+My professional journey spans enterprise AI/ML engineering at Accenture, where I built production-ready ML pipelines for 25+ models on AWS SageMaker, developed scalable ML solutions driving a 41% increase in digital sales, and architected real-time inference systems using TorchServe, Triton Inference Server, and AWS Lambda. I also gained deep expertise in LLM fine-tuning, RAG systems, and Responsible AI practices (SHAP, LIME, Fairlearn, GDPR compliance).
 
-I specialize in building high-performance backend systems that integrate cutting-edge AI capabilities, including RAG (Retrieval-Augmented Generation), vector search, and LLM APIs, while maintaining production-grade reliability and security. My focus is on creating scalable, maintainable architectures that deliver measurable performance improvements and business value.
+Most recently, as an AI Engineering Intern at Scholarship Auditions, I deployed a production RAG system serving 3K+ monthly active users with 100K+ records, reducing P95 latency by 30% through query optimization, composite indexing, and Redis caching.
 
-I'm passionate about API design, system optimization, and leveraging AI/ML technologies to solve complex technical challenges. When I'm not coding, I enjoy exploring new backend technologies, contributing to open-source projects, and staying current with the latest developments in distributed systems and machine learning.`
+I specialize in building high-performance backend systems that integrate cutting-edge AI capabilities — including RAG, vector search, LLM APIs, and MLOps pipelines — while maintaining production-grade reliability and security. My focus is on creating scalable, maintainable architectures that deliver measurable performance improvements and business value.
+
+I'm passionate about API architecture, system optimization, and pushing the boundaries of what AI systems can do at scale. When I'm not coding, I enjoy exploring new ML research, contributing to open-source projects, and staying current with the latest developments in distributed systems and large language models.`

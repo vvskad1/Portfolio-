@@ -3,7 +3,7 @@ import { EXPERIENCE } from "@/content/home"
 
 export const metadata: Metadata = {
   title: "Experience — V.V.S. Krishna Aditya",
-  description: "2+ years of professional experience in backend development, API design, and AI system integration.",
+  description: "3+ years of professional experience in backend development, AI/ML engineering, and production-grade API and ML pipeline design.",
 }
 
 /**
@@ -18,8 +18,9 @@ export default function ExperiencePage() {
           Professional Experience
         </h1>
         <p className="text-lg text-fg/80 max-w-2xl leading-relaxed">
-          2+ years of experience building scalable backend systems, optimizing REST APIs, and
-          integrating AI/ML capabilities with production-grade reliability.
+          3+ years of experience building scalable backend systems, optimizing REST APIs, and
+          integrating AI/ML capabilities — from ML pipelines and LLM fine-tuning at Accenture
+          to production-grade RAG systems in research and startup environments.
         </p>
       </div>
 

@@ -8,8 +8,7 @@ import { LOGOS } from "@/content/home"
 const LABELS: Record<string, string> = {
   csueb: "California State University, East Bay",
   "scholarship-auditions": "Scholarship Auditions",
-  yahvaai: "YahvaAI",
-  virtusa: "Virtusa",
+  accenture: "Accenture",
 }
 
 export default function LogoStrip() {

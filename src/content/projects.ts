@@ -34,19 +34,19 @@ export const PROJECTS: Project[] = [
   },
   {
     slug: "vitaledger",
-    title: "VitaLedger",
+    title: "Vite-Ledger",
     year: 2025,
     category: "HealthTech",
-    summary: "AI-driven fitness and wellness platform that personalizes health management using contextual intelligence and empathetic automation as a digital health twin.",
-    tech: ["React", "FastAPI", "SQLite", "Groq", "RAG", "Bright Data", "Lava Payments", "Postman"],
+    summary: "AI-driven fitness and wellness platform featuring modular FastAPI microservices, LLM-powered recommendation workflows, and background task processing delivering consistent sub-400ms response times.",
+    tech: ["FastAPI", "React", "PostgreSQL", "LLM", "Redis", "Background Tasks", "REST APIs", "Python"],
     cover: "/assets/images/vitaledger-cover.svg",
     role: "Full-Stack Developer",
     date: "2025-10-01",
     metrics: [
-      { label: "AI Features", value: "4 Core" },
-      { label: "Built At", value: "CalHacks 12.0" },
-      { label: "Privacy", value: "Encrypted" },
-      { label: "Intelligence", value: "Contextual" }
+      { label: "Plan Creation Effort", value: "-60%" },
+      { label: "Response Time", value: "<400ms" },
+      { label: "Architecture", value: "Microservices" },
+      { label: "AI Features", value: "LLM-Powered" }
     ],
     liveUrl: "https://vitaledger.vercel.app",
     repoUrl: "https://github.com/vvskad1/ViteLedger"
@@ -56,16 +56,16 @@ export const PROJECTS: Project[] = [
     title: "AI-Powered Interview Platform",
     year: 2025,
     category: "AI",
-    summary: "Comprehensive full-stack solution for automated technical interviews with real-time proctoring, speech-to-text evaluation, and AI-driven candidate assessment.",
+    summary: "Comprehensive full-stack candidate evaluation platform supporting 500+ mock interviews with speech-to-text scoring, automated rubric-based grading, multi-tenant session management, and row-level data isolation.",
     tech: ["FastAPI", "React", "PostgreSQL", "Groq AI", "Speech-to-Text", "Real-time Proctoring", "Python"],
     cover: "/assets/images/ai-interview-cover.svg",
     role: "Creator & Developer",
     date: "2025-08-01",
     metrics: [
-      { label: "Assessment", value: "AI-Driven" },
-      { label: "Proctoring", value: "Real-time" },
-      { label: "Evaluation", value: "Speech-to-Text" },
-      { label: "Stack", value: "Full-Stack" }
+      { label: "Mock Interviews", value: "500+" },
+      { label: "Report Generation", value: "-35%" },
+      { label: "Auth", value: "Token-Based" },
+      { label: "Isolation", value: "Row-Level" }
     ],
     repoUrl: "https://github.com/vvskad1/AI_Interview_Platform"
   },
@@ -141,11 +141,11 @@ export const getFilteredProjects = (filters: ProjectFilters): Project[] => {
   return PROJECTS.filter(project => {
     const matchesCategory = filters.category === "All" || project.category === filters.category
     const matchesYear = !filters.year || project.year === filters.year
-    const matchesSearch = !filters.search || 
+    const matchesSearch = !filters.search ||
       project.title.toLowerCase().includes(filters.search.toLowerCase()) ||
       project.summary.toLowerCase().includes(filters.search.toLowerCase()) ||
       project.tech.some(tech => tech.toLowerCase().includes(filters.search.toLowerCase()))
-    
+
     return matchesCategory && matchesYear && matchesSearch
   })
 }

@@ -37,10 +37,10 @@ export default function HomePage() {
 
               {/* Subheading */}
               <p className="text-xl md:text-2xl text-fg/80 mb-8 leading-relaxed">
-                Backend Engineer | Graduate Research Assistant
+                Backend Engineer &amp; AI/ML Engineer | Graduate Research Assistant
                 <br />
                 <span className="text-lg text-fg/60">
-                  Designing high-performance REST APIs and integrating AI systems
+                  Designing scalable REST APIs, ML pipelines, and LLM-powered systems
                 </span>
               </p>
 
@@ -60,12 +60,12 @@ export default function HomePage() {
                 <div className="bg-muted/30 backdrop-blur-sm border border-border rounded-xl p-6 hover:bg-muted/40 transition-colors">
                   <div className="text-2xl mb-2">⚙️</div>
                   <h3 className="font-semibold mb-1 text-fg">Backend Engineering</h3>
-                  <p className="text-sm text-fg/70">REST APIs, Spring Boot & FastAPI</p>
+                  <p className="text-sm text-fg/70">3+ Years · REST APIs, Spring Boot &amp; FastAPI</p>
                 </div>
                 <div className="bg-muted/30 backdrop-blur-sm border border-border rounded-xl p-6 hover:bg-muted/40 transition-colors">
                   <div className="text-2xl mb-2">🤖</div>
-                  <h3 className="font-semibold mb-1 text-fg">AI Integration</h3>
-                  <p className="text-sm text-fg/70">RAG, Vector Search & LLM APIs</p>
+                  <h3 className="font-semibold mb-1 text-fg">AI/ML Engineering</h3>
+                  <p className="text-sm text-fg/70">PyTorch, MLflow, AWS SageMaker &amp; LLMs</p>
                 </div>
               </div>
 
@@ -161,7 +161,7 @@ export default function HomePage() {
             <SectionHeading
               overline="Professional Journey"
               title="Work Experience"
-              description="My professional journey through various internships and positions, gaining experience in different aspects of software development and AI engineering."
+              description="My professional journey — from enterprise AI/ML engineering at Accenture to production RAG systems and research-grade backend services."
             />
 
             {/* Experience Timeline */}
