@@ -19,7 +19,7 @@ export default function ExperiencePage() {
         </h1>
         <p className="text-lg text-fg/80 max-w-2xl leading-relaxed">
           3+ years of experience building scalable backend systems, optimizing REST APIs, and
-          integrating AI/ML capabilities — from ML pipelines and LLM fine-tuning at Accenture
+          integrating AI/ML capabilities — from ML pipelines and LLM fine-tuning at JP Morgan Chase
           to production-grade RAG systems in research and startup environments.
         </p>
       </div>

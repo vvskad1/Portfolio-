@@ -22,7 +22,7 @@ export const PROJECTS = [
   }
 ]
 
-export const LOGOS = ["csueb", "scholarship-auditions", "accenture"] as const
+export const LOGOS = ["csueb", "scholarship-auditions", "jpmorgan"] as const
 
 export const SKILLS = {
   "Languages": [
@@ -167,7 +167,7 @@ export const EXPERIENCE = [
     skills: ["RAG", "Vector Search", "Redis", "Load Testing", "Performance Optimization"]
   },
   {
-    company: "Accenture",
+    company: "JP Morgan Chase",
     role: "AI/ML Engineer",
     period: "June 2021 - July 2024",
     location: "Hyderabad, India",
@@ -229,7 +229,7 @@ export const BIO_SHORT = "Backend Engineer & AI/ML Engineer with 3+ years of exp
 
 export const BIO_LONG = `I'm a Backend Engineer and AI/ML Engineer with 3+ years of experience designing and optimizing scalable REST APIs using Java (Spring Boot) and FastAPI. Currently pursuing my Master's in Computer Science at California State University - East Bay, where I work as a Graduate Research Assistant architecting FastAPI services for 8+ research projects, processing 50K+ monthly inference requests.
 
-My professional journey spans enterprise AI/ML engineering at Accenture, where I built production-ready ML pipelines for 25+ models on AWS SageMaker, developed scalable ML solutions driving a 41% increase in digital sales, and architected real-time inference systems using TorchServe, Triton Inference Server, and AWS Lambda. I also gained deep expertise in LLM fine-tuning, RAG systems, and Responsible AI practices (SHAP, LIME, Fairlearn, GDPR compliance).
+My professional journey spans enterprise AI/ML engineering at JP Morgan Chase, where I built production-ready ML pipelines for 25+ models on AWS SageMaker, developed scalable ML solutions driving a 41% increase in digital sales, and architected real-time inference systems using TorchServe, Triton Inference Server, and AWS Lambda. I also gained deep expertise in LLM fine-tuning, RAG systems, and Responsible AI practices (SHAP, LIME, Fairlearn, GDPR compliance).
 
 Most recently, as an AI Engineering Intern at Scholarship Auditions, I deployed a production RAG system serving 3K+ monthly active users with 100K+ records, reducing P95 latency by 30% through query optimization, composite indexing, and Redis caching.
 

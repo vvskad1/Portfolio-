@@ -161,7 +161,7 @@ export default function HomePage() {
             <SectionHeading
               overline="Professional Journey"
               title="Work Experience"
-              description="My professional journey — from enterprise AI/ML engineering at Accenture to production RAG systems and research-grade backend services."
+              description="My professional journey — from enterprise AI/ML engineering at JP Morgan Chase to production RAG systems and research-grade backend services."
             />
 
             {/* Experience Timeline */}
